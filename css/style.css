@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    /* padding-top: -30; */
+}
+
+.botones{
+    padding: 9px;
+    border-radius: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+.botones a{
+    background-color: #0a2be9;
+    padding: 9px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+
+}
+
+.botones a:focus{
+    background-color: rgb(50, 194, 194);
+}
+
+.greetings{
+    font-size: 7rem;
+    font-weight: 900;
+}
+.greetings > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: 1s;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 4rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    .description{
+        font-size: 2rem;
+    }
+    
+    .button a{
+        font-size: 1rem;
+    }
+}
+
+/* --- ESTILOS DE LA CARTA Y DETALLES PERSONALIZADOS --- */
+.carta-carmen {
+    background: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 25px 35px;
+    max-width: 450px;
+    margin: 40px auto 20px auto;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    animation: fadeIn 3s ease-in-out;
+    position: relative;
+    z-index: 100;
+}
+
+.carta-carmen p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.firma-dar {
+    font-weight: bold;
+    font-style: italic;
+    color: #d4af37; /* Tono dorado/amarillo oscuro elegante */
+    margin-top: 25px !important;
+}
+
+.flor-especial-container {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 100;
+}
+
+.btn-flor {
+    background-color: #ffeb3b;
+    border: 2px solid #fbc02d;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    color: #424242;
+    font-weight: bold;
+}
+
+.btn-flor:hover {
+    transform: scale(1.08);
+    background-color: #fbc02d;
+    color: #000;
+}
+
+/* --- ESTILOS DEL MODAL (MENSAJE OCULTO) --- */
+.modal-oculto {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.7); 
+    animation: fadeIn 0.4s;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    margin: 20vh auto; 
+    padding: 30px 40px;
+    border: 3px solid #fbc02d;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 380px;
+    text-align: center;
+    font-size: 1.15rem;
+    color: #333;
+    position: relative;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+}
+
+.psdt {
+    font-size: 0.9rem;
+    color: #757575;
+    margin-top: 20px !important;
+    font-style: italic;
+}
+
+.cerrar-modal {
+    color: #9e9e9e;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.cerrar-modal:hover {
+    color: #d32f2f;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
